@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171717">
+
+    <EditText
+        android:id="@+id/editTextValue1"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:hint="@string/enter_first_value"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#EAE4E4"
+        android:textColorHint="@color/white"
+        android:textStyle="bold|italic"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/editTextValue2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextValue1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:clickable="true"
+        android:hint="Enter second value"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="bold|italic"
+        tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextValue2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="38dp"
+        android:fontFamily="monospace"
+        android:text="Add"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonSubtract"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAdd"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-51dp"
+        android:layout_marginEnd="34dp"
+        android:text="Subtract"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonMultiply"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSubtract"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="62dp"
+        android:text="@string/multiply" />
+
+    <Button
+        android:id="@+id/buttonDivide"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonMultiply"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="-49dp"
+        android:layout_marginEnd="42dp"
+        android:rotationX="-1"
+        android:text="Divide"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="228dp"
+        android:layout_height="74dp"
+        android:layout_below="@+id/buttonDivide"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"
+        android:text="Result will appear here"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Simple calculator</string>
+    <string name="multiply">Multiply</string>
+    <string name="enter_first_value">Enter first value</string>
+</resources>
